@@ -1,0 +1,21 @@
+# Generated assets
+output/
+exports/
+*.tmp
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# OS/editor
+.DS_Store
+.obsidian/workspace*.json
+
+# Secrets and local config
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.mobileprovision
