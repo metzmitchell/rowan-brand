@@ -2,7 +2,7 @@
 
 ## Primary method
 
-Use the local Rowan quote-card generator in `tools/rowan-quote-cards/`.
+Use the local [Rowan quote-card generator](../tools/rowan-quote-cards/).
 
 It creates deterministic PNG slides and optional multipage PDF carousels. This is preferred over image generation because exact text, brand colors, and repeatable iteration matter more than novelty.
 

@@ -46,4 +46,4 @@ The quote-card generator uses:
 - Times New Roman Italic for restrained emphasis
 - A small sans-serif attribution when needed
 
-Use `*asterisks*` for italic, `_underscores_` for regular, and `[[double brackets]]` for accent-color spans in generated cards.
+Use `*asterisks*` for italic, `_underscores_` for regular, and the generator's double-bracket accent markup for accent-color spans in generated cards.

@@ -97,7 +97,7 @@ Italic emphasis:
 - Same color as surrounding text unless the user asks otherwise
 
 Accent-color spans:
-- Use `[[accent text]]` to change the font color, not to draw a highlight box
+- Use the generator's double-bracket accent markup to change the font color, not to draw a highlight box
 - On Shell/off-white, default accent words should usually be Green or Purple
 - Use `--accent-color blush` only for a single Ultra Bold accent word with strong contrast
 - Use `~underlined text~` for a restrained editorial underline when the card needs extra rhythm

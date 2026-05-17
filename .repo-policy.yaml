@@ -1,0 +1,69 @@
+repo_type: rowan_shared
+visibility: public
+owner: Mitch Metz
+steward: Glarth
+client: none
+project_id: rowan-brand-assets
+canonical_brief: docs/project-brief.md
+
+intended_audience:
+  - public
+  - Rowan collaborators
+  - contractors using Rowan brand assets
+
+privacy_classification: public-safe
+sharing_boundary:
+  external_sharing_approved: true
+  approved_external_audience:
+    - public
+  blocked_content:
+    - secrets_credentials_tokens
+    - customer_data
+    - internal_strategy
+    - cross_client_context
+    - private_personal_information
+    - licensed_font_binaries
+    - analytics_ids_or_api_material
+
+approved_sources:
+  rowan_hub: https://rowan.build/open/?vault=Rowan&file=Agent%20Space%2FBrand%20Assets%2FREADME.md
+  mission_control_project: https://rowan.build/open/?vault=Rowan&file=Mission%20Control%2Fdata%2Fprojects%2Frowan-website.md
+  source_map: docs/source-map.md
+  allowed_source_types:
+    - public_safe_brand_guideline
+    - public_safe_logo_asset
+    - public_safe_copywriting_guideline
+    - approved_tool_documentation
+  raw_sources_default: internal_staging_only
+
+routing:
+  target_confidence_required: high
+  ambiguous_target_action: stage_internal_and_block
+  cross_repo_retrieval: disabled_unless_policy_allows
+
+update_workflow:
+  order:
+    - stage_source
+    - classify_project_and_audience
+    - privacy_review
+    - update_project_brief_if_current_truth_changed
+    - update_supporting_docs
+    - proofing_review
+    - commit_or_open_pr
+  client_or_vendor_visible_merge_requires_human_approval: true
+
+review_gates:
+  before_commit:
+    - package_audit_passes
+    - privacy_review_passes
+    - broken_link_check_passes
+    - repo_policy_matches_audience
+  before_external_share:
+    - explicit_mitch_approval
+    - approved_audience_confirmed
+    - final_secret_scan_passes
+
+freshness:
+  last_reviewed: 2026-05-17
+  next_review: monthly
+  stale_after_days: 30

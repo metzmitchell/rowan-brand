@@ -27,7 +27,7 @@ python3 "tools/rowan-quote-cards/scripts/make_quote_card.py" \
   --output "output/quote-card.png"
 ```
 
-Use `*asterisks*` inside `--text` for Times New Roman italic emphasis, `_underscores_` for Times regular, `[[double brackets]]` for accent-color text, and `~tildes~` for a restrained underline.
+Use `*asterisks*` inside `--text` for Times New Roman italic emphasis, `_underscores_` for Times regular, the generator's double-bracket accent markup for accent-color text, and `~tildes~` for a restrained underline.
 
 Manual line breaks are allowed when the card needs exact composition:
 
